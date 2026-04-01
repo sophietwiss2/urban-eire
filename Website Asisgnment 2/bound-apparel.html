@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bound Apparel | UrbanÉire — Irish Women's Fashion</title>
+  <meta name="description" content="Discover Bound Apparel — Dublin's leading Irish activewear brand. High-quality leggings, sports bras and tracksuits loved by college students across Ireland." />
+  <meta name="keywords" content="Bound Apparel, Irish activewear, leggings Ireland, sports bra Ireland, Irish fashion, Dublin activewear, college fashion Ireland, UrbanÉire" />
+  <meta name="author" content="UrbanÉire" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Bound Apparel | UrbanÉire" />
+  <meta property="og:description" content="Founded in Dublin in 2020. Discover why college students across Ireland love Bound Apparel." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.urbaneire.ie/bound-apparel.html" />
+  <meta property="og:image" content="images/Hero-6.jpg" />
+  <link rel="canonical" href="https://www.urbaneire.ie/bound-apparel.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-paragraph { opacity: 1 !important; transform: translateY(0) !important; }
+
+    .page-hero { position: relative; height: 360px; display: flex; align-items: center; justify-content: center; overflow: hidden; background: url('images/Hero-6.jpg') center / cover no-repeat, linear-gradient(135deg, #2d5a3d 0%, #4a7c59 60%, #a8c5a0 100%); }
+    .page-hero-overlay { position: absolute; inset: 0; background: rgba(45,90,61,0.75); }
+    .page-hero-content { position: relative; z-index: 2; text-align: center; padding: 2rem 1.5rem; }
+    .page-hero-tag { display: inline-block; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-light); background: rgba(201,168,124,0.2); padding: 0.28rem 0.9rem; border-radius: var(--radius-pill); margin-bottom: 1rem; }
+    .page-hero-title { font-family: var(--font-display); font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 700; color: var(--white); line-height: 1; margin-bottom: 0.8rem; }
+    .page-hero-subtitle { font-size: 1.1rem; color: rgba(255,255,255,0.8); }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    .about-paragraph { font-size: 1.15rem; line-height: 1.88; color: var(--charcoal); margin-bottom: 1.2rem; }
+    .about-paragraph:last-child { margin-bottom: 0; }
+    .about-right-col { display: flex; flex-direction: column; gap: 1.2rem; }
+    .about-hero-img-wrap { border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 4/3; box-shadow: var(--shadow-card); }
+    .about-hero-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .stat-card { background: var(--white); border-radius: var(--radius-lg); padding: 1.4rem; text-align: center; box-shadow: var(--shadow-card); border-top: 4px solid var(--sage-light); }
+    .stat-number { display: block; font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: var(--sage-deep); }
+    .stat-label { font-size: 0.8rem; color: var(--grey-mid); }
+
+    .favs-section { padding-block: 5rem; background: var(--cream); }
+    .favs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+    .product-card { background: var(--white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-card); transition: transform 0.3s var(--ease-out); }
+    .product-card:hover { transform: translateY(-6px); }
+    .product-img-wrap { position: relative; overflow: hidden; aspect-ratio: 3/4; background: var(--blush); }
+    .product-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .product-badge { position: absolute; top: 0.8rem; left: 0.8rem; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); background: var(--sage-dark); padding: 0.22rem 0.7rem; border-radius: var(--radius-pill); z-index: 2; }
+    .product-badge-gold { background: var(--gold); color: var(--sage-deep); }
+    .product-info { padding: 1rem 1.2rem 1.2rem; }
+    .product-name { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--sage-deep); margin-bottom: 0.8rem; }
+    .product-footer { display: flex; align-items: center; justify-content: space-between; }
+    .product-price { font-size: 1rem; font-weight: 700; color: var(--sage-dark); }
+    .btn-sm { padding: 0.5rem 1.2rem; font-size: 0.82rem; }
+
+    .video-section { padding-block: 5rem; background: var(--sage-deep); }
+    .video-section .section-tag { color: var(--gold-light); background: rgba(201,168,124,0.18); }
+    .video-section .section-title { color: var(--white); }
+    .video-section .section-subtitle { color: rgba(255,255,255,0.65); }
+    .video-grid { display: grid; grid-template-columns: 1fr 320px; gap: 2.5rem; align-items: start; }
+    .video-link-card { display: block; border-radius: var(--radius-lg); background: linear-gradient(135deg, #1a3a28 0%, #2d5a3d 60%, #4a7c59 100%); text-decoration: none; transition: transform 0.3s; aspect-ratio: 16/9; }
+    .video-link-card:hover { transform: translateY(-4px); }
+    .video-link-inner { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 2rem; min-height: 200px; }
+    .video-play-icon { width: 64px; height: 64px; border-radius: 50%; background: rgba(255,255,255,0.15); border: 3px solid rgba(255,255,255,0.5); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; color: var(--white); padding-left: 4px; }
+    .video-link-card:hover .video-play-icon { background: var(--gold); border-color: var(--gold); }
+    .video-link-text { text-align: center; }
+    .video-link-title { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 0.3rem; }
+    .video-link-sub { font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+    .video-caption { font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-top: 0.8rem; font-style: italic; }
+    .video-facts { background: rgba(255,255,255,0.07); border: 1px solid rgba(168,197,160,0.2); border-radius: var(--radius-lg); padding: 1.6rem; }
+    .video-facts-title { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 1.2rem; }
+    .facts-list { display: flex; flex-direction: column; gap: 1rem; }
+    .fact-item { display: flex; gap: 0.8rem; align-items: flex-start; }
+    .fact-icon { font-size: 1.1rem; flex-shrink: 0; }
+    .fact-item p { font-size: 0.88rem; color: rgba(255,255,255,0.72); line-height: 1.6; }
+
+    .cta-section { padding-block: 4rem; background: var(--sage-deep); text-align: center; }
+    .cta-title { font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.5rem); font-weight: 700; color: var(--white); margin-bottom: 0.8rem; }
+    .cta-text { font-size: 1rem; color: rgba(255,255,255,0.7); margin-bottom: 1.8rem; }
+    .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    @media (max-width: 1024px) { .favs-grid { grid-template-columns: repeat(2, 1fr); } .video-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 900px) { .about-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) { .page-hero { height: 260px; } .favs-grid { grid-template-columns: 1fr; } .cta-buttons { flex-direction: column; align-items: center; } }
+  </style>
+</head>
+<body>
+
+  <header id="main-header">
+    <div class="header-inner">
+      <div class="logo">
+        <a href="index.html" aria-label="UrbanÉire Home">Urban<span class="logo-accent">Éire</span></a>
+      </div>
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav id="main-nav" aria-label="Main site navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="ditsy-bits.html" class="nav-link">Ditsy Bits</a></li>
+          <li><a href="bound-apparel.html" class="nav-link active" aria-current="page">Bound Apparel</a></li>
+          <li><a href="thank-you.html" class="nav-link nav-cta">Contact &amp; Reviews</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero" aria-label="Bound Apparel page hero">
+    <div class="page-hero-overlay" aria-hidden="true"></div>
+    <div class="page-hero-content">
+      <span class="page-hero-tag">Featured Brand</span>
+      <h1 class="page-hero-title">Bound Apparel</h1>
+      <p class="page-hero-subtitle">Dublin-born activewear. Not just for the gym.</p>
+    </div>
+  </section>
+
+  <main id="main-content">
+
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-tag">What is Bound Apparel?</span>
+            <h2 id="about-heading" class="section-title">Activewear That Goes Way Beyond the Gym</h2>
+            <p class="about-paragraph">Dublin-born Abbie Beggs started the Irish sportswear company Bound Apparel in 2020. Abbie started Bound when she was barely 20 years old and about to enter her last year of college. She had trouble finding sportswear that was attractive, high-quality, and reasonably priced (Bound Apparel, 2020).</p>
+            <p class="about-paragraph">The company soon gained recognition for its &ldquo;not just for the gym&rdquo; apparel, a concept that underlies every item they produce. Four-way stretch fabric is used in their best-selling Boundless collection to provide comfortable, premium sportswear that looks great in the gym as well as on campus or in a caf&eacute;.</p>
+            <p class="about-paragraph">The brand has a loyal community of students who love the quality, the fit and the Irish-made ethos behind every piece. From leggings and sports bras to tracksuits and shorts, Bound Apparel empowers women to feel confident and stylish in every aspect of their lives &mdash; whether that&rsquo;s a morning workout, a college lecture or a night out in Dublin (Bound Apparel, 2023).</p>
+            <p class="about-paragraph">College students who adore each product, quality, and Irish-made craftsmanship make up the brand&rsquo;s sizable fan market. With a variety of options ranging from leggings and sports bras to tracksuits and shorts, Bound Apparel encourages women to feel confident and stylish in any aspect of their lives, whether it&rsquo;s a morning workout, a college lecture, or a night out in Dublin (Bound Apparel, 2023).</p>
+          </div>
+          <div class="about-right-col">
+            <div class="about-hero-img-wrap">
+              <img src="images/hero-2.jpg" alt="Bound Apparel activewear worn by an Irish college student" class="about-hero-img" loading="lazy" />
+            </div>
+            <div class="about-stats">
+              <div class="stat-card"><span class="stat-number">2020</span><span class="stat-label">Founded in Dublin</span></div>
+              <div class="stat-card"><span class="stat-number">20K+</span><span class="stat-label">Happy Customers</span></div>
+              <div class="stat-card"><span class="stat-number">263+</span><span class="stat-label">5-Star Reviews</span></div>
+              <div class="stat-card"><span class="stat-number">3</span><span class="stat-label">Countries Reached</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="favs-section" id="favs" aria-labelledby="favs-heading">
+      <div class="container">
+        <span class="section-tag">Current Favourites</span>
+        <h2 id="favs-heading" class="section-title">The Pieces Students Are Loving Right Now</h2>
+        <p class="section-subtitle">Our top picks from the latest Bound Apparel drops — grab them before they sell out.</p>
+        <div class="favs-grid">
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="images/Bound-leggins.jpg" alt="Charcoal Boundless Leggings by Bound Apparel" class="product-img" loading="lazy" />
+              <span class="product-badge">Best Seller</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Charcoal Boundless Leggings</h3>
+              <div class="product-footer">
+                <span class="product-price">&euro;49.99</span>
+                <a href="https://boundonlineapparel.com" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-sm">Shop Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="images/Boundless-sports-bra.jpg" alt="Boundless Sports Bra by Bound Apparel" class="product-img" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(160deg,#d4a09a,#f2d4d0)';this.style.display='none'" />
+              <span class="product-badge product-badge-gold">Fan Favourite</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Boundless Sports Bra</h3>
+              <div class="product-footer">
+                <span class="product-price">&euro;34.99</span>
+                <a href="https://boundonlineapparel.com" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-sm">Shop Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="images/GreY-ULTIMATE-Hoodie.jpg" alt="Grey Ultimate Hoodie by Bound Apparel" class="product-img" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(160deg,#a8c5a0,#e8f0e9)';this.style.display='none'" />
+              <span class="product-badge product-badge-gold">New In</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Grey Ultimate Hoodie</h3>
+              <div class="product-footer">
+                <span class="product-price">&euro;84.99</span>
+                <a href="https://boundonlineapparel.com" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-sm">Shop Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="images/Mulberry-shorts.jpg" alt="Mulberry Boundless Shorts by Bound Apparel" class="product-img" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(160deg,#c8c0d8,#edeaf5)';this.style.display='none'" />
+              <span class="product-badge">New In</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Mulberry Boundless Shorts</h3>
+              <div class="product-footer">
+                <span class="product-price">&euro;36.99</span>
+                <a href="https://boundonlineapparel.com" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-sm">Shop Now</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section" id="video" aria-labelledby="video-heading">
+      <div class="container">
+        <span class="section-tag">As Seen On TV</span>
+        <h2 id="video-heading" class="section-title">Bound Apparel featuring on Ireland AM in 2022</h2>
+        <p class="section-subtitle">Later on, their brand accelerated to thousands of college students wanting the latest gym wear looks.</p>
+        <div class="video-grid">
+          <div>
+            <a href="https://youtu.be/LiNuf2lFeQk" target="_blank" rel="noopener noreferrer" class="video-link-card" aria-label="Watch Bound Apparel on Ireland AM">
+              <div class="video-link-inner">
+                <div class="video-play-icon" aria-hidden="true">&#9654;</div>
+                <div class="video-link-text">
+                  <p class="video-link-title">Bound Apparel on Ireland AM</p>
+                  <p class="video-link-sub">Click to watch on YouTube</p>
+                </div>
+              </div>
+            </a>
+            <p class="video-caption">Bound Apparel founder Abbie Beggs on Ireland AM — her journey from college student to Irish fashion entrepreneur.</p>
+          </div>
+          <div class="video-facts">
+            <h3 class="video-facts-title">Did You Know?</h3>
+            <ul class="facts-list">
+              <li class="fact-item"><span class="fact-icon">&#128293;</span><p style="font-size:1rem;">Abbie established Bound Apparel during her last year of college at the age of 20, demonstrating that you are never too young to launch a business.</p></li>
+              <li class="fact-item"><span class="fact-icon">&#127775;</span><p style="font-size:1rem;">Bound Apparel has more than 20,000 customers in Ireland, the UK, and Europe, and that number continues to rise each month.</p></li>
+              <li class="fact-item"><span class="fact-icon">&#9733;</span><p style="font-size:1rem;">Customers praise the Bound team&rsquo;s quality, fit, and exceptional customer service in over 263 five-star Trustpilot evaluations.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-label="Call to action">
+      <div class="container">
+        <h2 class="cta-title">Ready to Shop Bound Apparel?</h2>
+        <p class="cta-text">Head to the official Bound Apparel website to browse the latest collections before they sell out.</p>
+        <div class="cta-buttons">
+          <a href="https://boundonlineapparel.com" target="_blank" rel="noopener noreferrer" class="btn btn-light">Visit Bound Apparel</a>
+          <a href="ditsy-bits.html" class="btn btn-outline-light">Explore Ditsy Bits</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="main-footer" aria-label="Site footer">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">Urban<span class="logo-accent">Éire</span></a>
+        <p class="footer-tagline">Celebrating Irish women's fashion, one campus at a time.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer links">
+        <h3 class="footer-nav-heading">Pages</h3>
+        <ul class="footer-nav-list">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="ditsy-bits.html" class="footer-link">Ditsy Bits</a></li>
+          <li><a href="bound-apparel.html" class="footer-link">Bound Apparel</a></li>
+          <li><a href="thank-you.html" class="footer-link">Contact &amp; Reviews</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h3 class="footer-nav-heading">Contact</h3>
+        <address>
+          <p><a href="/cdn-cgi/l/email-protection#a4ccc1c8c8cbe4d1d6c6c5cac1cdd6c18acdc1" class="footer-link"><span class="__cf_email__" data-cfemail="d4bcb1b8b8bb94a1a6b6b5bab1bda6b1fabdb1">[email&#160;protected]</span></a></p>
+          <p>Dublin, Ireland</p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> UrbanÉir
